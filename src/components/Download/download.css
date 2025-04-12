@@ -1,0 +1,53 @@
+.download-conteiner {
+    position: fixed;
+    top: 10%;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
+    width: 400px;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px 8px rgb(97, 96, 96);
+}
+
+.download-conteiner.show {
+    right: 5px;
+}
+.download-conteiner .download-content{
+    width: 100%;
+    margin-top: 16px;
+}
+.download-conteiner .download-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.download-conteiner .download-item .load-name{
+    display: flex;
+    flex-direction: column;
+}
+.download-conteiner .completed-btns .check{
+    color: green;
+}
+.download-conteiner .completed-btns .xmark{
+    color: red;
+}
+.download-conteiner .completed-btns{
+    cursor: pointer;
+    font-size: 18px;
+}
+.download-conteiner .download-progress{
+    width: 100%;
+    height: 8px;
+    margin-top: 16px;
+    background-color: #ccc;
+}
+.download-conteiner .download-progress .progress {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    background-color: green;
+}

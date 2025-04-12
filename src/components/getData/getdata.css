@@ -1,0 +1,168 @@
+.data-conteiner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 100px;
+}
+
+.wrapp {
+    width: 380px;
+    height: 725.91px;
+    padding: 15px;
+    box-shadow: 0.5px 1px 5px rgb(55, 54, 54);
+    overflow: scroll;
+    border-radius: 8px;
+    position: relative;
+    margin: 13px 10px;
+}
+.wrapp .download-image{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    font-size: 1.2em;
+    color: #4b4a4a;
+}
+.wrapp.anim {
+    opacity: 0;
+    animation: fade 1s forwards;
+}
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+.wrapp::-webkit-scrollbar{
+    width: 10px;
+    height: 100%;
+    background-color: #dfdcdc;
+    border-radius: 3px;
+}
+.wrapp::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #dddddd;
+    opacity: 0;
+    border-radius: 3px;
+}
+.wrapp .contiener{
+    margin-top: 20px;
+}
+.wrapp .addres-conteiner .addres-item {
+    font-size: 18px;
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapp .addres-conteiner .addres-item.active{
+    height: 100%;
+    max-height: 999px;
+    overflow: visible;
+}
+.wrapp .bank-conteiner .bank-item{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+.wrapp .bank-conteiner .bank-item.active{
+    height: 100%;
+    max-height: 999px;
+    overflow: visible;
+}
+.wrapp .birthDate .birthDate-item{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+.wrapp .birthDate .birthDate-item.active{
+    height: 100%;
+    max-height: 999px;
+    overflow: visible;
+}
+
+.wrapp .company .company-item{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapp .company .company-item.active{
+    height: 100%;
+    max-height: 999px;
+    overflow: visible;
+}
+
+.wrapp .crypto .crypto-item{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapp .crypto .crypto-item.active{
+    height: 100%;
+    max-height: 999px;
+    overflow: visible;
+}
+
+.wrapp .data .data-item{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapp .data .data-item.active{
+    height: 100%;
+    max-height: 999px;
+    overflow: visible;
+}
+
+.wrapp .hair .hair-item{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapp .hair .hair-item.active{
+    height: 100%;
+    max-height: 999px;
+}
+
+.wrapp .data-input .data-input-item{
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'poopins', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapp .data-input .data-input-item.active{
+    height: 100%;
+    max-height: 999px;
+}
+.wrapp .contiener h1 {
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+}
+.wrapp .contiener i{
+    font-size: 20px;
+    color: #b8b4b4;
+}
+.wrapp .contiener span{
+    display: block;
+    padding-top: 13px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    color: #4b4a4a;
+}

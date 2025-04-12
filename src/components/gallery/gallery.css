@@ -1,0 +1,81 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    --_c:no-repeat radial-gradient(farthest-side,#25b09b 92%,#0000);
+    background: 
+      var(--_c) top,
+      var(--_c) left,
+      var(--_c) right,
+      var(--_c) bottom;
+    background-size: 12px 12px;
+    animation: l7 1s infinite;
+  }
+  @keyframes l7 {to{transform: rotate(.5turn)}}
+
+  .gallery-conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+  }
+.gallery-item{
+    width: 350px;
+    height: 350px;
+    margin-top: 20px;  
+    margin-left: 10px;
+}
+.images-conteiner{
+    overflow: hidden;
+}
+.gallery-item img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    height: 100%;
+}
+.search-content{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px 35px;
+    border-radius: 28px;
+    background: #f6f6f6;    
+    transition: background 0.25s;
+}
+.search-content:focus-within{
+    background: #f1f1f1;
+}
+.search-content #search-input{
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+    width: 300px;
+}
+.search-content #search-input::placeholder{
+    color: rgb(0, 0, 0, 0.25);
+}
+
+.category-btns{
+    margin: 0 6px;
+    padding: 12px 35px;
+    background: transparent;
+    border: 2px solid red;
+    color: red;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    border-radius: 12px;
+    transition: background 0.3s ease-in-out;
+}
+.category-btns.active{
+    background-color: red;
+    color: #fff;
+}
+.category-btns:hover{
+    background-color: red;
+    color: #fff;
+}

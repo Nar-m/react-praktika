@@ -1,0 +1,78 @@
+.drowDown {
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    z-index: 1;
+    top: 17%;
+    box-shadow: 1px 0.5px 2px rgb(48, 44, 44);
+    right: 18%;
+    max-width: 250px;
+    border-radius: 3px;
+    transform: scale(0);
+    width: 100%;
+    transition: scale 0.1ms ease-in-out;
+}
+
+.drowDown.show {
+    transform: scale(1);
+}
+
+.drowDown .names,
+.icons {
+    font-size: 17px;
+    color: #333131;
+}
+.download-conteiner {
+    position: fixed;
+    top: 10%;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
+    width: 400px;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0.5px 0.5px 8px rgb(97, 96, 96);
+}
+
+.download-conteiner.show {
+    right: 5px;
+}
+.download-conteiner .download-content{
+    width: 100%;
+    margin-top: 16px;
+}
+.download-conteiner .download-item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.download-conteiner .download-item .load-name{
+    display: flex;
+    flex-direction: column;
+}
+.download-conteiner .completed-btns .check{
+    color: green;
+}
+.download-conteiner .completed-btns .xmark{
+    color: red;
+}
+.download-conteiner .completed-btns{
+    cursor: pointer;
+    font-size: 18px;
+}
+.download-conteiner .download-progress{
+    width: 100%;
+    height: 8px;
+    margin-top: 16px;
+    background-color: #ccc;
+}
+.download-conteiner .download-progress .progress {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    background-color: green;
+}

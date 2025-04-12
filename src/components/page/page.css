@@ -1,0 +1,62 @@
+.page-btns {
+    padding: 13px 46px;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 8px;
+    margin: 0 6px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: 0.3s all;
+}
+
+.wrapp-page {
+    height: auto;
+    overflow: auto;
+}
+
+.wrapp-page {
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    font-weight: normal;
+    color: rgb(0, 0, 34);
+}
+
+.wrapp-page .email,
+.first_name .last_name {
+    margin-top: 6px;
+}
+
+.page-btns.active {
+    background-color: red;
+    color: #fff;
+    border: 1px solid red;
+}
+
+.share-conteiner {
+    position: absolute;
+    top: 30%;
+    right: 6%;
+    max-width: 420px;
+    padding: 36px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.share-conteiner > div{
+    margin: 0 6px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+}
+.share-conteiner > div:hover{
+    background-color: gainsboro;
+}
+.share-conteiner > div span:nth-child(1){
+    font-size: 2em;
+    color: rgb(96, 96, 232);
+}
